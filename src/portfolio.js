@@ -113,7 +113,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Jenkins",
-      fontAwesomeClassname: "fab fa-jenkins" 
+      fontAwesomeClassname: "fab fa-jenkins"
     },
     {
       skillName: "python",
@@ -402,15 +402,6 @@ export {
   twitterDetails,
   isHireable
 };
-
-
-
-
-
-
-
-
-
 
 // /* Change this file to get your personal Portfolio */
 
