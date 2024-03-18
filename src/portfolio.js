@@ -55,12 +55,10 @@ const skillsSection = {
   subTitle: "CRAZY DEVOPS ENTHUSIAST! WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Write the CI/CD pipeline with the different tools like Jenkins, GitHub Action, Azure DevOps, Concourse and many more"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Can automate the complete infrastructure using the terraform"),
+    emoji("⚡ Worked on the diffrent clouds like AWS, AZURE and GCP")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -69,8 +67,8 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Bash",
-      fontAwesomeClassname :"fas fa-cube"
-        },
+      fontAwesomeClassname: "fas fa-cube"
+    },
     {
       skillName: "Ubuntu",
       fontAwesomeClassname: "fab fa-ubuntu"
@@ -78,6 +76,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Github",
       fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-sharp fa-solid fa-dharmachakra"
     },
     {
       skillName: "sql-database",
@@ -112,13 +114,13 @@ const educationInfo = {
       schoolName: "Dr. APJ Abdul Kalam University, Lucknow",
       logo: require("./assets/images/logo.png"),
       subHeader: "Bachelor of technology in Computer Science",
-      duration: "September 2017 - May 2021",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      duration: "August 2017 - May 2021",
+      desc: "I have developed a IOT project in my final year where i can enable the irrigation with the help of the driness of the soil and once it is wet then irrigation will stop. With the help of this project, we can reduce the water waste.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "My final project was consider in the top-3 project in our college",
+        "I have earn a reward in my course to secure a good percentage in class and maintain a great attendace [98%] with a certificate and 5000 rupe check."
       ]
-    },
+    }
   ]
 };
 
@@ -226,9 +228,9 @@ const bigProjects = {
 
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "ENY",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/DCT.webp"),
+      projectName: "EMS - Duck Creek ",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // footerLink: [
       //   {
       //     name: "Visit Website",
@@ -238,9 +240,9 @@ const bigProjects = {
       // ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/3TL.png"),
       projectName: "3TL",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // footerLink: [
       //   {
       //     name: "Visit Website",
@@ -262,16 +264,16 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Google Associate Certificate",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "My first certificate towords the cloud- Google Associate certification",
+      image: require("./assets/images/GCP_associate_certficate.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
+          url: "https://www.credential.net/f369f9dd-f59a-40f2-8caa-8694d93630af#gs.6kblel"
+        }
         // {
         //   name: "Award Letter",
         //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
@@ -282,33 +284,62 @@ const achievementSection = {
         // }
       ]
     },
-    // {
-    //   title: "Google Assistant Action",
-    //   subtitle:
-    //     "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-    //   image: require("./assets/images/googleAssistantLogo.webp"),
-    //   imageAlt: "Google Assistant Action Logo",
-    //   footerLink: [
-    //     {
-    //       name: "View Google Assistant Action",
-    //       url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-    //     }
-    //   ]
-    // },
+    {
+      title: "Microsoft Certified: DevOps Engineer Expert",
+      subtitle: "Microsoft Certified: DevOps Engineer Expert",
+      image: require("./assets/images/badge-devops-expert.webp"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://learn.microsoft.com/api/credentials/share/en-us/MohdMuzakkirSaifi-2544/DB01AAA6EA1B3A00?sharingId=4755FCAB157CB4FB"
+        }
+      ]
+    },
+    {
+      title: "Microsoft Certified: Azure Database Administrator Associate",
+      subtitle: "Microsoft Certified: Azure Database Administrator Associate",
+      image: require("./assets/images/microsoft-certified-associate.webp"),
+      imageAlt: "Microsoft Certified: Azure Database Administrator Associate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://learn.microsoft.com/api/credentials/share/en-us/MohdMuzakkirSaifi-2544/FA2F834F64B0CAF5?sharingId=4755FCAB157CB4FB"
+        }
+      ]
+    },
 
-    // {
-    //   title: "PWA Web App Developer",
-    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-    //   image: require("./assets/images/pwaLogo.webp"),
-    //   imageAlt: "PWA Logo",
-    //   footerLink: [
-    //     {name: "Certification", url: ""},
-    //     {
-    //       name: "Final Project",
-    //       url: "https://pakistan-olx-1.firebaseapp.com/"
-    //     }
-    //   ]
-    // }
+    {
+      title: "Microsoft Certified: Azure Fundamentals",
+      subtitle: "Microsoft Certified: Azure Fundamentals",
+      image: require("./assets/images/azure_fun.webp"),
+      imageAlt: "Microsoft Certified: Azure Fundamentals",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://learn.microsoft.com/api/credentials/share/en-us/MohdMuzakkirSaifi-2544/BBB0B1C599C43D3C?sharingId=4755FCAB157CB4FB"
+        }
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    },
+    {
+      title:
+        "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      subtitle:
+        "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      image: require("./assets/images/azure_fun.webp"),
+      imageAlt:
+        "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://learn.microsoft.com/api/credentials/share/en-us/MohdMuzakkirSaifi-2544/87EA72ADDAB79C7F?sharingId=4755FCAB157CB4FB"
+        }
+      ]
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -323,7 +354,8 @@ const blogSection = {
   blogs: [
     {
       url: "https://blog.knoldus.com/how-to-perform-different-operations-on-aws-s3-bucket-using-boto3/",
-      title: "How to perform different operations on  AWS S3 bucket using Boto3",
+      title:
+        "How to perform different operations on  AWS S3 bucket using Boto3",
       description:
         "We need to know about boto. What is boto??  Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python"
     },
