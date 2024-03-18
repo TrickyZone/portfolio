@@ -151,7 +151,7 @@ const techStack = {
     },
     {
       Stack: "Linux",
-      progressPercentage: "60%"
+      // progressPercentage: "60%"
     },
     {
       Stack: "Python",
@@ -352,18 +352,18 @@ const blogSection = {
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    // {
+    //   url: "https://blog.knoldus.com/how-to-perform-different-operations-on-aws-s3-bucket-using-boto3/",
+    //   title:
+    //     "How to perform different operations on  AWS S3 bucket using Boto3",
+    //   description:
+    //     "We need to know about boto. What is boto??  Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python"
+    // },
     {
-      url: "https://blog.knoldus.com/how-to-perform-different-operations-on-aws-s3-bucket-using-boto3/",
-      title:
-        "How to perform different operations on  AWS S3 bucket using Boto3",
-      description:
-        "We need to know about boto. What is boto??  Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+      url: "https://blog.knoldus.com/author/muzakkirsaifi/",
+      title: "DevOps Blogs",
+      description: "You can find all the blogs here for devops",
+      subTitle: "testing"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -587,7 +587,7 @@ export {
 //   ]
 // };
 
-// // Your top 3 proficient stacks/tech experience
+// // Your top 3 proficient stacks/tech experienctestinge
 
 // const techStack = {
 //   viewSkillBars: true, //Set it to true to show Proficiency Section
