@@ -124,95 +124,11 @@ const educationInfo = {
   ]
 };
 
-const techStackInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Terraform",
-      logo: require("./assets/images/terraformio-icon.png"),
-      subHeader: "Bachelor of t Science",
-      duration: "Au21",
-      desc: "I have developed a IOT project in my final year where i can enable the irrigation with the help of the driness of the soil and once it is wet then irrigation will stop. With the help of this project, we can reduce the water waste.",
-      // descBullets: [
-      //   "My final project wa in my course to secure a good percentage in class and maintain a great attendace [98%] with a certificate and 5000 rupe check."
-      // ]
-    }
-  ]
-};
-
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    {
-      header: "DevOps Tools",
-      tools: [ 
-        {
-          name: "Kubernetes",
-          logo: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
-          progressPercentage: "90%"
-        },
-        {
-          name: "Terraform",
-          logo: "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg",
-          progressPercentage: "80%"
-        },
-        
-        // Add more tools as needed
-      ]
-    },
-    {
-      header: "CI/CD",
-      tools: [
-        {
-          name: "Kubernetes",
-          logo: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
-          progressPercentage: "90%"
-        },
-        {
-          name: "Terraform",
-          logo: "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg",
-          progressPercentage: "80%"
-        },
-        
-        // Add more tools as needed
-      ]
-    },
-    {
-      header: "Programming Language",
-      tools: [
-        {
-          name: "Kubernetes",
-          logo: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
-          progressPercentage: "90%"
-        },
-        {
-          name: "Terraform",
-          logo: "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg",
-          progressPercentage: "80%"
-        },
-        
-        // Add more tools as needed
-      ]
-    },
-    {
-      header: "Monitoring Tools",
-      tools: [
-        {
-          name: "Kubernetes",
-          logo: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
-          progressPercentage: "90%"
-        },
-        {
-          name: "Terraform",
-          logo: "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg",
-          progressPercentage: "80%"
-        },
-        
-        // Add more tools as needed
-      ]
-    },
     {
       Stack: "Infra Automation - Terraform", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
@@ -235,7 +151,7 @@ const techStack = {
     },
     {
       Stack: "Linux",
-      progressPercentage: "60%"
+      // progressPercentage: "60%"
     },
     {
       Stack: "Python",
@@ -519,8 +435,7 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
-  isHireable,
-  techStackInfo
+  isHireable
 };
 
 // /* Change this file to get your personal Portfolio */
