@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "MuZakkir Saifi",
-  title: "Hey !!, I'm MuZakkir",
+  title: "Hey !! I'm MuZakkir",
   // subTitle: emoji(
   //   "a passionate DevOps Engineer dedicated to streamlining processes and fostering collaboration between development and operations teams. With expertise in infrastructure as code, automation, and cloud technologies, I thrive in dynamic environments where innovation and efficiency are paramount. From small startups to large enterprises, I've led transformative initiatives to accelerate software delivery and enhance reliability. Let's embrace the principles of DevOps together and pave the way for a brighter future in technology."
   // ),
@@ -54,11 +54,10 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY DEVOPS ENTHUSIAST! WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Write the CI/CD pipeline with the different tools like Jenkins, GitHub Action, Azure DevOps, Concourse and many more"
-    ),
     emoji("⚡ Can automate the complete infrastructure using the terraform"),
-    emoji("⚡ Worked on the diffrent clouds like AWS, AZURE and GCP")
+    emoji("⚡ Worked on the diffrent clouds like AWS, AZURE and GCP"),
+    emoji( "⚡ Write the CI/CD pipeline with the different tools like Jenkins, GitHub Action, Azure DevOps, Concourse and many more"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -111,14 +110,14 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Dr. APJ Abdul Kalam University, Lucknow",
+      schoolName: "Dr. A.P.J Abdul Kalam University, Lucknow",
       logo: require("./assets/images/logo.png"),
       subHeader: "Bachelor of technology in Computer Science",
       duration: "August 2017 - May 2021",
-      desc: "I have developed a IOT project in my final year where i can enable the irrigation with the help of the driness of the soil and once it is wet then irrigation will stop. With the help of this project, we can reduce the water waste.",
+      desc: "In my final year project, I developed an IoT solution for smart irrigation. By monitoring soil moisture levels in real-time, the system optimizes watering, conserving water and promoting sustainable agriculture. This innovative approach reduces water waste while ensuring healthy plant growth.",
       descBullets: [
-        "My final project was consider in the top-3 project in our college",
-        "I have earn a reward in my course to secure a good percentage in class and maintain a great attendace [98%] with a certificate and 5000 rupe check."
+        "My final project was recognized among the top three projects in our college.",
+        "I received an award for achieving a high percentage in my course, maintaining exceptional attendance (98%), and was presented with a certificate and a 5000 rupee check."
       ]
     }
   ]
@@ -137,26 +136,26 @@ const techStack = {
       Stack: "CI/CD",
       progressPercentage: "70%"
     },
-    {
-      Stack: "Kubernetes",
-      progressPercentage: "60%"
-    },
-    {
-      Stack: "Ansible",
-      progressPercentage: "60%"
-    },
-    {
-      Stack: "Chef",
-      progressPercentage: "60%"
-    },
-    {
-      Stack: "Linux",
-      // progressPercentage: "60%"
-    },
-    {
-      Stack: "Python",
-      progressPercentage: "60%"
-    },
+    // {
+    //   Stack: "Kubernetes",
+    //   progressPercentage: "60%"
+    // },
+    // {
+    //   Stack: "Ansible",
+    //   progressPercentage: "60%"
+    // },
+    // {
+    //   Stack: "Chef",
+    //   progressPercentage: "60%"
+    // },
+    // {
+    //   Stack: "Linux",
+    //   // progressPercentage: "60%"
+    // },
+    // {
+    //   Stack: "Python",
+    //   progressPercentage: "60%"
+    // },
     {
       Stack: "Azure",
       progressPercentage: "60%"
@@ -189,19 +188,19 @@ const workExperiences = {
     //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     // },
     {
-      role: "DevOps Engineer Intern",
+      role: "DevOps Engineer",
       company: "Knoldus",
       companylogo: require("./assets/images/knol.png"),
-      date: "July 2021 – Jan 2021",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "July 2021 – Jan 2022",
+      desc: " As a DevOps engineer at Knoldus , I played a pivotal role in streamlining development operations and enhancing overall efficiency. Collaborating closely with cross-functional teams, I spearheaded various projects aimed at automating deployment processes and optimizing the development pipeline. My contributions led to tangible improvements in the company's workflow, resulting in increased productivity and reduced time-to-market for software releases. Leveraging a diverse set of technologies and tools, I continuously sought opportunities for learning and growth, ensuring that our team remained at the forefront of industry best practices."
     },
-    {
-      role: "DevOps Engineer",
-      company: "Nashtech",
-      companylogo: require("./assets/images/nash.png"),
-      date: "Jan 2021 – Jan 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
+    // {
+    //   role: "DevOps Engineer",
+    //   company: "Nashtech",
+    //   companylogo: require("./assets/images/nash.png"),
+    //   date: "Jan 2021 – Jan 2022",
+    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    // },
     {
       role: "Senior DevOps Engineer",
       company: "Nashtech",
@@ -363,7 +362,13 @@ const blogSection = {
       url: "https://blog.knoldus.com/author/muzakkirsaifi/",
       title: "DevOps Blogs",
       description: "You can find all the blogs here for devops",
-      subTitle: "testing"
+      // subTitle: "testing"
+    },
+    {
+      url: "https://blog.nashtechglobal.com/?s=saifi/",
+      title: "Secondary DevOps Blogs site",
+      description: "You can find all the blogs here for devops",
+      // subTitle: "testing"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -405,7 +410,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-9104234211",
+  // number: "+91-9104234211",
   email_address: "muzakkirsaifi@gmail.com"
 };
 
