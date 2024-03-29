@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Fade } from "react-reveal";
+import React, {useContext, useEffect, useState} from "react";
+import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
@@ -7,14 +7,14 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
-import { illustration, greeting } from "../../portfolio";
+import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 // Define titles outside the component
-const titles = ["DevOps Engineer", "Cloud Engineer", "Blogger"];
+const titles = ["DevOps Engineer. .", "Cloud Engineer. .", "Blogger. ."];
 
 export default function Greeting() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   const [titleIndex, setTitleIndex] = useState(0);
   const [currentTitle, setCurrentTitle] = useState("");
   const [typingIndex, setTypingIndex] = useState(0);
@@ -22,17 +22,19 @@ export default function Greeting() {
   useEffect(() => {
     const interval = setInterval(() => {
       if (typingIndex < titles[titleIndex].length) {
-        setCurrentTitle((prevTitle) => prevTitle + titles[titleIndex][typingIndex]);
-        setTypingIndex((prevIndex) => prevIndex + 1);
+        setCurrentTitle(
+          prevTitle => prevTitle + titles[titleIndex][typingIndex]
+        );
+        setTypingIndex(prevIndex => prevIndex + 1);
       } else {
         clearInterval(interval);
         setTimeout(() => {
           setTypingIndex(0);
           setCurrentTitle("");
-          setTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
-        }, 2000); // Wait for 2 seconds before typing the next title
+          setTitleIndex(prevIndex => (prevIndex + 1) % titles.length);
+        }, 700); // Wait for 2 seconds before typing the next title
       }
-    }, 100); // Typing speed: 100 milliseconds per letter
+    }, 150); // Typing speed: 100 milliseconds per letter
 
     return () => clearInterval(interval);
   }, [titleIndex, typingIndex]);
@@ -47,8 +49,11 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
-                {greeting.title} <span className="wave-emoji">{emoji("👋")}</span>
+              <h1
+                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
+              >
+                {greeting.title}{" "}
+                <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               {/* Render the current title being typed */}
               <h2 className="greeting-title2">I am a {currentTitle}</h2>
@@ -89,10 +94,6 @@ export default function Greeting() {
     </Fade>
   );
 }
-
-
-
-
 
 // import React, {useContext} from "react";
 // import {Fade} from "react-reveal";

@@ -26,7 +26,7 @@ const greeting = {
   //   "a passionate DevOps Engineer dedicated to streamlining processes and fostering collaboration between development and operations teams. With expertise in infrastructure as code, automation, and cloud technologies, I thrive in dynamic environments where innovation and efficiency are paramount. From small startups to large enterprises, I've led transformative initiatives to accelerate software delivery and enhance reliability. Let's embrace the principles of DevOps together and pave the way for a brighter future in technology."
   // ),
   subTitle: emoji(
-    "Your go-to DevOps enthusiast! I live for optimizing workflows, automating processes, and bringing teams together for seamless software delivery. Let's revolutionize development and operations, one deployment at a time!"
+    "DevOps enthusiast committed to streamlining workflows and fostering collaboration for efficient software delivery. With expertise in automation and cloud technologies, I drive continuous integration and deployment, revolutionizing development practices.!"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -52,11 +52,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY DEVOPS ENTHUSIAST! WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY DEVOPS ENTHUSIAST! Who wants to explore every tech stack...",
   skills: [
-    emoji("⚡ Can automate the complete infrastructure using the terraform"),
-    emoji("⚡ Worked on the diffrent clouds like AWS, AZURE and GCP"),
-    emoji( "⚡ Write the CI/CD pipeline with the different tools like Jenkins, GitHub Action, Azure DevOps, Concourse and many more"
+    emoji("⚡ Can automate the complete infras using terraform."),
+    emoji("⚡ Worked on the diffrent clouds like AWS, AZURE and GCP."),
+    emoji(
+      "⚡ Can write the CI/CD pipeline with the different tools like Jenkins, GitHub Action, Azure DevOps, Concourse and many more."
+    ),
+    emoji(
+      "⚡ Can worked with the various devops tools like - Ansible, Docker, Helm, Chef, Prometheus, Grafana, Kubernetes and many more.."
     )
   ],
 
@@ -80,10 +84,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Kubernetes",
       fontAwesomeClassname: "fas fa-sharp fa-solid fa-dharmachakra"
     },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
+    // {
+    //   skillName: "sql-database",
+    //   fontAwesomeClassname: "fas fa-database"
+    // },
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
@@ -129,12 +133,12 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Infra Automation - Terraform", //Insert stack or technology you have experience in
+      Stack: "Infrastructure Automation", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
       Stack: "CI/CD",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     // {
     //   Stack: "Kubernetes",
@@ -158,7 +162,11 @@ const techStack = {
     // },
     {
       Stack: "Azure",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "AWS",
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -188,25 +196,25 @@ const workExperiences = {
     //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     // },
     {
-      role: "DevOps Engineer",
+      role: "DevOps Engineer intern",
       company: "Knoldus",
       companylogo: require("./assets/images/knol.png"),
       date: "July 2021 – Jan 2022",
-      desc: " As a DevOps engineer at Knoldus , I played a pivotal role in streamlining development operations and enhancing overall efficiency. Collaborating closely with cross-functional teams, I spearheaded various projects aimed at automating deployment processes and optimizing the development pipeline. My contributions led to tangible improvements in the company's workflow, resulting in increased productivity and reduced time-to-market for software releases. Leveraging a diverse set of technologies and tools, I continuously sought opportunities for learning and growth, ensuring that our team remained at the forefront of industry best practices."
+      desc: "I have joined this company as a DevOps Intern. As a DevOps, I had the opportunity to gain hands-on experience with a wide range of tools and cloud technologies. My responsibilities encompassed contributing to multiple projects and collaborating with teams to refine development and deployment processes."
     },
-    // {
-    //   role: "DevOps Engineer",
-    //   company: "Nashtech",
-    //   companylogo: require("./assets/images/nash.png"),
-    //   date: "Jan 2021 – Jan 2022",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    // },
+    {
+      role: "DevOps Engineer",
+      company: "Nashtech",
+      companylogo: require("./assets/images/nash.png"),
+      date: "Jan 2021 – Jan 2022",
+      desc: "As a DevOps engineer at Nashtech, I spearheaded efforts to streamline development, collaborating with cross-functional teams to automate deployment processes and optimize workflows. My efforts yielded tangible improvements in productivity. I prioritized continuous learning, keeping our team aligned with industry best practices."
+    },
     {
       role: "Senior DevOps Engineer",
       company: "Nashtech",
       companylogo: require("./assets/images/nash.png"),
       date: "Jan 2022 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "As a Senior DevOps Engineer at Nashtech, I have spearheaded numerous projects aimed at enhancing project capabilities and introducing innovative features. I managed project development and supervised DevOps interns, ensuring seamless operations. Currently, I'm focused on a cutting-edge project utilizing Helm, Kubernetes, Python, Azure DevOps, Terraform, and other tools to deploy a new application efficiently."
     }
   ]
 };
@@ -223,25 +231,27 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Project",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "SOME COMPANIES WHERE I HAVE WORKED TO CREATE THEIR TECH",
 
   projects: [
     {
       image: require("./assets/images/DCT.webp"),
-      projectName: "EMS - Duck Creek ",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // footerLink: [
-      //   {
-      //     name: "Visit Website",
-      //     url: "http://saayahealth.com/"
-      //   }
-      //   //  you can add extra buttons here.
-      // ]
+      projectName: "EMS-Duck Creek ",
+      projectDesc:
+        "As a DevOps engineer, I employ Terraform to automate infrastructure provisioning and create Terratest test cases for validation. Additionally, I orchestrate complete application deployment through Terraform, Azure DevOps, and custom scripts to ensure seamless automation.",
+      footerLink: [
+        // {
+        //   name: "Visit Website",
+        //   url: "http://saayahealth.com/"
+        // }
+        //  you can add extra buttons here.
+      ]
     },
     {
       image: require("./assets/images/3TL.png"),
-      projectName: "3TL",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      projectName: "3-tier logic",
+      projectDesc:
+        "As the DevOps at 3-tier logic, I manage cloud infrastructure, implement Kubernetes deployments with Helm, and apply IaC principles using Terraform. Additionally, I optimize Nginx settings, automate tasks with Python, and utilize Azure services for microservices deployment. "
       // footerLink: [
       //   {
       //     name: "Visit Website",
@@ -361,13 +371,13 @@ const blogSection = {
     {
       url: "https://blog.knoldus.com/author/muzakkirsaifi/",
       title: "DevOps Blogs",
-      description: "You can find all the blogs here for devops",
+      description: "You can find all the blogs here for devops"
       // subTitle: "testing"
     },
     {
       url: "https://blog.nashtechglobal.com/?s=saifi/",
       title: "Secondary DevOps Blogs site",
-      description: "You can find all the blogs here for devops",
+      description: "You can find all the blogs here for devops"
       // subTitle: "testing"
     }
   ],
