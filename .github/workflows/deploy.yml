@@ -22,9 +22,9 @@ jobs:
           persist-credentials: false
 
       - name: Setup Node.js 🔧
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.0.2
         with:
-          node-version: 'latest'
+          node-version: 16
 
       - name: Update npm 🚀
         run: npm install -g npm@latest
@@ -33,6 +33,7 @@ jobs:
         run: |
           node -v
           npm --version
+          export NODE_OPTIONS=--openssl-legacy-provider
           echo $NODE_OPTIONS
       
 
@@ -41,6 +42,7 @@ jobs:
           node -v
           npm --version
           npm ci
+
           
       - name:  Build 🔧 # Build the Project
         run: |
