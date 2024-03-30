@@ -24,7 +24,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
+    "start": "node fetch.js && react-scripts start --openssl-legacy-provider",
     "build": "node fetch.js && react-scripts build",
     "deploy": "gh-pages -b feature/adding_muz_new_test -d build",
     "test": "react-scripts test",
