@@ -28,9 +28,19 @@ jobs:
 
       - name: Update npm 🚀
         run: npm install -g npm@latest
+      
+      - name: Set NODE_OPTIONS environment variable and check versions
+        run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
+          node -v
+          npm --version
+          echo $NODE_OPTIONS
+      
 
       - name: Install and Build 🔧 # Build the Project
         run: |
+          node -v
+          npm --version
           npm install
           npm run build
       - name: Deploy 🚀
