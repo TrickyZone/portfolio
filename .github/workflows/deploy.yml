@@ -37,12 +37,18 @@ jobs:
           echo $NODE_OPTIONS
       
 
-      - name: Install and Build 🔧 # Build the Project
+      - name: Install 🔧 # Build the Project
         run: |
           node -v
           npm --version
           npm install
-          npm run build
+          
+      - name:  Build 🔧 # Build the Project
+        run: |
+          node -v
+          npm --version
+          npm run build     
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
